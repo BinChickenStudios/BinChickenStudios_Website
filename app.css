@@ -2,238 +2,128 @@
 @import url("https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Teko&display=swap");
 
-/* START OF GENERAL STUFF */
+
+/* default values for all elements */
 *
 {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body
-{
+    /*default text settings  */
     font-family: 'Teko', serif;
     font-weight: 400;
-    font-size: 24px;
-    background-color: #F2F2F2;
-}
-
-
-button
-{
-    cursor: pointer;
-}
-
-h1,h2,h3,h4,h5,h6
-{
-    margin: 0;
-    text-transform:capitalize;
-}
-
-header, footer, section
-{
-    padding: 0 5%;
-}
-
-.dark
-{   
-    font-family: 'Teko', sans-serif;
-    background-color: #0D0D0D;
-}
-.dark *
-{
-    color: #F2F2F2;
-}
-
-.light
-{
-    font-family: 'Teko', sans-serif;
-    background-color: #F2F2F2;
-}
-.light * 
-{
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 1.15em;
     color: #0D0D0D;
+
+    /* default size settings */
+    margin: 0%;
+    padding: 0%;
+    transition: 0.35s;
 }
 
-.group
+/* default values for header style elements */
+h1, h2, h3, h4, h5, h6, button, label
 {
-    display: flex;
+    text-transform: uppercase;
 }
-.center
+
+/* default values for header elements */
+h1, h2, h3, h4, h5, h6
 {
-    align-items: center;
+    font-weight: 700;
 }
-.column
+
+/* values for each header */
+h6{font-size: 1.6em;} h5{font-size: 2em;} h4{font-size: 2.2em;} h3{font-size: 2.4em;} h2{font-size: 2.8em;} h1{font-size: 3.2em;}
+
+
+/* default values for aligning elements */
+body, nav, header, section, footer, form, ul, ol, div
 {
     flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }
-.row
+/* default values for focus elements */
+nav, header, section, footer
+{
+    width: 75%;
+    padding-left: 12.5%;
+    padding-right: 12.5%;
+    height: 100%;
+
+}
+
+/* default values for full sized elements */
+ul, ol, form, img
+{
+    width: 100%;
+    height: 100%;
+}
+
+/* default values for row elements */
+ul, ol, form
 {
     flex-direction: row;
 }
 
-.between
+/* default value for unordered lists */
+ul
 {
-    justify-content: space-between;
-}
-
-.even
-{
-    justify-content: space-evenly;
-}
-
-.wrap
-{
-    flex-wrap: wrap;
-}
-
-/* END OF GENERAL STUFF */
-
-/* START OF HEADER STUFF */
-
-header
-{
-    margin-bottom: 32px;
-}
-nav
-{
-    min-height: 64px;
     list-style: none;
 }
-nav *
+
+/* default value for list items */
+li
 {
-    cursor: pointer;
-    text-decoration: none;
-    background: none;
+    padding: 1em 1em;
+}
+
+/* default value for buttons */
+button
+{
     border: none;
-    font-size: 24px;
+    background: none;
 }
-nav img
+/* default value for buttons (on hover) */
+button:hover
 {
-    margin-top: 8px;
-    width: 64px;
-    height: 64px;
-}
-nav li,a
-{
-    display: inline-block;
-    padding: 0 24px; 
-    font-size: 24px;
-    transition: ease-out .2s;
-}
-nav button
-{
-    font-size: 24px;
-    transition: ease-out .2s;
+    font-size: 1.2em;
+    transition: 0.35s;
 }
 
- nav a:hover
-{
-    font-size: 32px;
-    transition: ease-out .1s;
-} 
-nav button:hover
-{
-    font-size: 32px;
-    transition: ease-out .1s;
+textarea, input {
+    width: 100%;
+    height: 1.5em;
+    box-sizing: border-box;
+    border-radius: 4px;
 }
 
-
-
-
-/* END OF HEADER STUFF */
-
-/* END OF SECTION STUFF */
-section
+textarea
 {
-    font-family: 'Teko', cursive;
-    background-color: #F2F2F2;
-    color: #0D0D0D;
-    margin: 0 0;
-    margin-bottom: 128px;
-}
-.logo
+    width: 100%;
+    height: 200px;
+    margin-bottom: 2em;
+    resize:none;
+  }
+
+/* default value for the body */
+body
 {
-    
-}
-.logo img
-{
-    width: 64px;
-    height: 64px;
-    margin: 8px 32px;
-}
-.showreel
-{
-  margin: 0 auto;
-  width: 50%;
+    background: #F2F2F2;
 }
 
-.stream
+nav, footer
 {
-    position: relative;
-    padding-bottom: 56.25%;
-    padding-top: 25px;
-    height: 0;
-    background-color: #0D0D0D;
-
+    background: #0D0D0D;
 }
 
-.stream iframe
+nav *, footer *
 {
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    width:  100%;
-    height: 100%;
-    cursor: pointer;
-}
-
-.game
-{
-    padding: 12px;
-}
-
-
-/* END OF SECTION STUFF */
-
-/* START OF FOOTER STUFF */
-
-
-footer
-{
-    min-height: 64px;
-    padding: 16px 0px;
-    padding-bottom: 32px;
-    list-style: none;
-}
-
-/* END OF FOOTER STUFF */
-
-
-
-
-
-
-
-
-
-
-
-
-.colours{
-    color: #0D0D0D;
     color: #F2F2F2;
-    color: #294D61;
-    color: #3D7985;
-
-    font-family: 'Odibee Sans', cursive;
-    font-weight: 400;
-    font-size: 24px;
-    text-decoration: none;
 }
-
 
 
 
